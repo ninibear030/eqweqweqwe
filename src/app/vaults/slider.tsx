@@ -1,8 +1,6 @@
-import { useState } from "react";
+import React from "react";
 
-export const Slider = () => {
-  const [mojiIndex, setMojiIndex] = useState(0);
-
+export const Slider = ({ mojiIndex, setMojiIndex }) => {
   const mojis = [
     "😄",
     "🙂",
@@ -18,7 +16,7 @@ export const Slider = () => {
   ];
 
   const handleRangeChange = (e) => {
-    setMojiIndex(e.target.value);
+    setMojiIndex(Number(e.target.value));
   };
 
   return (
