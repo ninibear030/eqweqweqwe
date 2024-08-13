@@ -43,7 +43,12 @@ const navigation = [
     icon: CalendarIcon,
     current: false,
   },
-  { name: "Research", href: "/blog", icon: DocumentDuplicateIcon, current: false },
+  {
+    name: "Research",
+    href: "/blog",
+    icon: DocumentDuplicateIcon,
+    current: false,
+  },
   { name: "Audits", href: "/audits", icon: ChartPieIcon, current: false },
 ];
 const teams = [
@@ -97,7 +102,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
                 </div>
               </TransitionChild>
               {/* Sidebar component, swap this element with another sidebar if you like */}
-              <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-indigo-600 px-6 pb-4">
+              <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#202426] px-6 pb-4">
                 <div className="flex h-16 shrink-0 items-center">logo</div>
                 <nav className="flex flex-1 flex-col">
                   <ul role="list" className="flex flex-1 flex-col gap-y-7">
@@ -109,8 +114,8 @@ export default function Example({ children }: { children: React.ReactNode }) {
                               href={item.href}
                               className={classNames(
                                 item.current
-                                  ? "bg-indigo-700 text-white"
-                                  : "text-indigo-200 hover:bg-indigo-700 hover:text-white",
+                                  ? "bg-[#202426] text-white"
+                                  : "text-indigo-200 hover:bg-[#202426] hover:text-white",
                                 "group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6"
                               )}
                             >
@@ -129,31 +134,6 @@ export default function Example({ children }: { children: React.ReactNode }) {
                         ))}
                       </ul>
                     </li>
-                    {/* <li>
-                      <div className="text-xs font-semibold leading-6 text-indigo-200">
-                        Your teams
-                      </div>
-                      <ul role="list" className="-mx-2 mt-2 space-y-1">
-                        {teams.map((team) => (
-                          <li key={team.name}>
-                            <a
-                              href={team.href}
-                              className={classNames(
-                                team.current
-                                  ? "bg-indigo-700 text-white"
-                                  : "text-indigo-200 hover:bg-indigo-700 hover:text-white",
-                                "group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6"
-                              )}
-                            >
-                              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-indigo-400 bg-indigo-500 text-[0.625rem] font-medium text-white">
-                                {team.initial}
-                              </span>
-                              <span className="truncate">{team.name}</span>
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </li> */}
                     <li className="mt-auto">
                       <a
                         href="#"
@@ -176,7 +156,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
         {/* Static sidebar for desktop */}
         <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
           {/* Sidebar component, swap this element with another sidebar if you like */}
-          <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-indigo-600 px-6 pb-4">
+          <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#202426] px-6 pb-4">
             <div className="flex h-16 shrink-0 items-center">logo</div>
             <nav className="flex flex-1 flex-col">
               <ul role="list" className="flex flex-1 flex-col gap-y-7">
@@ -189,7 +169,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
                           className={classNames(
                             item.current
                               ? "bg-indigo-700 text-white"
-                              : "text-indigo-200 hover:bg-indigo-700 hover:text-white",
+                              : "text-indigo-200 hover:bg-black hover:text-white",
                             "group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6"
                           )}
                         >
@@ -236,7 +216,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
                 <li className="mt-auto">
                   <a
                     href="#"
-                    className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-indigo-200 hover:bg-indigo-700 hover:text-white"
+                    className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-indigo-200 hover:bg-black hover:text-white"
                   >
                     <Cog6ToothIcon
                       aria-hidden="true"
@@ -251,7 +231,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
         </div>
 
         <div className="lg:pl-72">
-          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-[#202426] bg-black px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
             <button
               type="button"
               onClick={() => setSidebarOpen(true)}
@@ -284,7 +264,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
                   className="block h-full w-full border-0 py-0 pl-8 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
                 />
               </form> */}
-              <div className="flex items-center gap-x-4 lg:gap-x-6">
+              <div className="flex items-center gap-x-4 lg:gap-x-6 ">
                 <button
                   type="button"
                   className="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500"
@@ -292,7 +272,6 @@ export default function Example({ children }: { children: React.ReactNode }) {
                   <span className="sr-only">View notifications</span>
                   {/* <BellIcon aria-hidden="true" className="h-6 w-6" /> */}
                 </button>
-
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative">

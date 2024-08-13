@@ -48,32 +48,14 @@ export default function Home() {
           hell
         </button>
       </div>
-      {level === 0 && (
-        <div className="grid grid-cols-3 gap-4">
-          <Request1 name="dealname" progress={50} title="deal title" />
-          <Request1 name="Gummi" progress={10} title="Lending protocol" />
-          <Request1 name="Beraland" progress={70} title="ecosystem" />
-          <Request1 name="Shogun" progress={38} title="crosschain" />
-        </div>
-      )}
-      {level === 1 && (
-        <div className="grid grid-cols-3 gap-4">
-          <Request1 name="dealname" progress={50} title="deal title" />
-          <Request1 name="Gummi" progress={10} title="Lending protocol" />
-          <Request1 name="Shogun" progress={38} title="crosschain" />
-        </div>
-      )}
-      {level === 2 && (
-        <div className="grid grid-cols-3 gap-4">
-          <Request1 name="dealname" progress={50} title="deal title" />
-          <Request1 name="Shogun" progress={38} title="crosschain" />
-        </div>
-      )}
-      {level === 3 && (
-        <div className="grid grid-cols-3 gap-4">
-          <Request1 name="dealname" progress={50} title="deal title" />
-        </div>
-      )}
+      <Slider />
+      <Input
+        type="number"
+        onChange={(e) => setAmount(e.target.value)}
+        value={amount}
+        className="text-black"
+      />
+      <button className="bg-yellow-300 p-4">Lets gamble</button>
     </main>
   );
 }
