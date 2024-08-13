@@ -25,7 +25,7 @@ export const NewRequest = ({
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <button className="mt-3 w-full p-2 bg-green-500 rounded-lg">
+        <button className=" text-indigo-200 rounded-lg underline text-right w-full text-xs">
           New Funding Request
         </button>
       </DialogTrigger>

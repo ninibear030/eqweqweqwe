@@ -24,7 +24,7 @@ export const Request = ({
   const [amount, setAmount] = useState("");
   return (
     <div
-      className="flex flex-col gap-2 border border-blue-600 p-4 rounded-xl hover:bg-blue-900 transition-all duration-300"
+      className="flex flex-col gap-2 border border-[#202426] p-4 rounded-xl hover:bg-[#202426] transition-all duration-300"
       onClick={() => setOpen(true)}
     >
       <div className="flex items-center gap-4">
