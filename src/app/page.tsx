@@ -1,9 +1,3 @@
-import Example from "./components/sidebar";
-
 export default function Home() {
-  return (
-    <main >
-hi
-    </main>
-  );
+  return <main>your personal profolio</main>;
 }

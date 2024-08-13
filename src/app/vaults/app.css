@@ -1,0 +1,24 @@
+.container {
+  
+  margin: 2rem auto 0;
+}
+
+.moji {
+  font-size: 200px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  margin: 0 10px;
+}
+
+
+span {
+  font-weight: bold;
+  color: #5fcf80;
+}
+
+span:last-child {
+  color: tomato;
+}
