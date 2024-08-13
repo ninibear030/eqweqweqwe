@@ -23,10 +23,30 @@ export default function Home() {
       <hr className="border-indigo-200 border-1 opacity-50" />
       <NewRequest name="Kodiac" progress={50} title="AMM liquidity" />
       <div className="grid grid-cols-2 gap-4">
-        <Request name="Kodiac" progress={50} title="AMM liquidity" />
-        <Request name="Gummi" progress={10} title="Lending protocol" />
-        <Request name="Beraland" progress={70} title="ecosystem" />
-        <Request name="Shogun" progress={38} title="crosschain" />
+        <Request
+          name="Kodiac"
+          progress={50}
+          title="AMM liquidity"
+          img="/assets/Kodiak.jpg"
+        />
+        <Request
+          name="Gummi"
+          progress={10}
+          title="Lending protocol"
+          img="/assets/Gummi.jpg"
+        />
+        <Request
+          name="Infra"
+          progress={70}
+          title="We need money, Fund us"
+          img="/assets/infra.jpg"
+        />
+        <Request
+          name="Shogun"
+          progress={38}
+          title="crosschain"
+          img="/assets/Shogun.jpg"
+        />
       </div>
     </main>
   );
