@@ -63,14 +63,14 @@ export default function Vault() {
       </div>
       <Slider mojiIndex={mojiIndex} setMojiIndex={setMojiIndex} />
 
-      <div className="text-2xl"> Deposit {`${selectedToken}`}</div>
+      <div className="text-2xl">Deposit {selectedToken}</div>
       <Input
         type="number"
         onChange={(e) => setAmount(e.target.value)}
         value={amount}
         className="text-black"
       />
-      <button className="bg-yellow-300 p-4">Let's gamble</button>
+      <button className="bg-yellow-300 p-4">Let&apos;s gamble</button>
     </main>
   );
 }
