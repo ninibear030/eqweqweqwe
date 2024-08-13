@@ -14,7 +14,7 @@ export const TokenRecord = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <tr className=" border-b border-blue-600 hover:bg-blue-900 transition-all duration-300">
+    <tr className=" border-b border-indigo-200 hover:bg-[#202426] transition-all duration-300 mt-10">
         <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
             <div className="flex items-center gap-4">
             <Image
@@ -28,19 +28,19 @@ export const TokenRecord = ({
             </div>
         </th>
         <td className="px-6 py-4 text-white">
-            ${price}
+            ${price.toLocaleString()}
         </td>
         <td className="px-6 py-4 text-white">
-            {amount}
+            {amount.toLocaleString()}
         </td>
         <td className="px-6 py-4 text-white">
-            ${amount * price}
+            ${(amount * price).toLocaleString()}
         </td>
-        <td className="px-6 py-4 text-right">
-        <button className="rounded-lg bg-blue-500 p-2">
+        {/* <td className="px-6 py-4 text-right"> */}
+        {/* <button className="rounded-lg bg-blue-500 p-2">
             <a href="#" className="font-medium text-white">Invest</a>
-          </button>
-        </td>
+          </button> */}
+        {/* </td> */}
     </tr>
 );
 };

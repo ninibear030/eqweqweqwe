@@ -22,8 +22,8 @@ export const Portfolio = ({
 
 
 <div className="overflow-x-auto shadow-md sm:rounded-lg">
-    <table className="w-full text-sm text-left rtl:text-right text-gray-500 border-b border-blue-600">
-        <thead className="text-xs text-white uppercase border-b border-blue-600  ">
+    <table className="w-full text-sm text-left rtl:text-right text-gray-500 border-b border-indigo-200">
+        <thead className="text-xs text-white uppercase border-b border-indigo-200  ">
             <tr>
                 <th scope="col" className="px-6 py-3">
                     Token
@@ -45,7 +45,6 @@ export const Portfolio = ({
             <TokenRecord token="HONEY" price={1.001} amount={1020095.2063} src="/assets/honey.png"/>
             <TokenRecord token="BERA" price={100000.7} amount={1000} src="/assets/bera.png"/>
             <TokenRecord token="WETH" price={3424.7} amount={102.2063} src="/assets/weth.png"/>
-
         </tbody>
     </table>
 </div>
