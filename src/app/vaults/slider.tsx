@@ -1,5 +1,6 @@
 import React from "react";
 
+//@ts-ignore
 export const Slider = ({ mojiIndex, setMojiIndex }) => {
   const mojis = [
     "😄",
@@ -15,7 +16,7 @@ export const Slider = ({ mojiIndex, setMojiIndex }) => {
     "💩",
   ];
 
-  const handleRangeChange = (e) => {
+  const handleRangeChange = (e:any) => {
     setMojiIndex(Number(e.target.value));
   };
 
