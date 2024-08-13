@@ -71,7 +71,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <div className="w-screen h-screen">
+      <div className="w-screen h-screen bg-[#16181A]">
         <Dialog
           open={sidebarOpen}
           onClose={setSidebarOpen}
@@ -104,9 +104,14 @@ export default function Example({ children }: { children: React.ReactNode }) {
               </TransitionChild>
               {/* Sidebar component, swap this element with another sidebar if you like */}
               <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#202426] px-6 pb-4">
-                <div className="flex h-16 shrink-0 items-center">
-                  <Image src="/syll.png" alt="Syllabus" className="" width={200} height={100} />
-                </div>
+                <Image
+                  src="/syll.png"
+                  alt="Syllabus"
+                  className="aspect-auto w-[200px] h-[50px] mt-4"
+                  width={200}
+                  height={100}
+                />
+
                 <nav className="flex flex-1 flex-col">
                   <ul role="list" className="flex flex-1 flex-col gap-y-7">
                     <li>
@@ -161,13 +166,13 @@ export default function Example({ children }: { children: React.ReactNode }) {
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#202426] px-6 pb-4">
             <div className="flex h-16 shrink-0 items-start">
-              <Image
-                src="/syll.png"
-                alt="Syllabus"
-                className="h-8"
-                width={200}
-                height={70}
-              />
+            <Image
+                  src="/syll.png"
+                  alt="Syllabus"
+                  className="aspect-auto w-[200px] h-[50px] mt-4"
+                  width={200}
+                  height={100}
+                />
             </div>
             <nav className="flex flex-1 flex-col">
               <ul role="list" className="flex flex-1 flex-col gap-y-7">
@@ -326,7 +331,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
-          <main className="py-10">
+          <main className="py-10 bg-[#16181A]">
             <div className="px-4 sm:px-6 lg:px-8">{children}</div>
           </main>
         </div>

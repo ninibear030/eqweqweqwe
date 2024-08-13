@@ -4,7 +4,7 @@ import { NewRequest } from "./newRequest";
 export default function Home() {
   return (
     <main className="flex flex-col gap-4">
-      <div className="flex justify-between gap-4 items-center">
+      <div className="flex justify-between gap-4 items-center mb-10">
         <div className="text-2xl">Fulcrum</div>
         <div className="w-[750px] flex gap-4">
           <div className="flex-1 text-center p-4 bg-[#202426] rounded-lg">
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
       </div>
 
-      <hr className="border-indigo-200 border-1 opacity-50" />
+
       <NewRequest name="Kodiac" progress={50} title="AMM liquidity" />
       <div className="grid grid-cols-2 gap-4">
         <Request
