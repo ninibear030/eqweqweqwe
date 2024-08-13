@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.59 131.4">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: PlayfairDisplay-Regular, 'Playfair Display';
+        font-size: 120px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(0 102.48)"><tspan x="0" y="0">S</tspan><tspan class="cls-2" x="64.8" y="0">y</tspan><tspan x="122.28" y="0">llabus</tspan></text>
+</svg>

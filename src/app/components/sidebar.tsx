@@ -27,6 +27,7 @@ import {
   ChevronDownIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 const navigation = [
   { name: "Assets", href: "/", icon: HomeIcon, current: false },
@@ -103,7 +104,9 @@ export default function Example({ children }: { children: React.ReactNode }) {
               </TransitionChild>
               {/* Sidebar component, swap this element with another sidebar if you like */}
               <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#202426] px-6 pb-4">
-                <div className="flex h-16 shrink-0 items-center">logo</div>
+                <div className="flex h-16 shrink-0 items-center">
+                  <Image src="/syll.png" alt="Syllabus" className="" width={200} height={100} />
+                </div>
                 <nav className="flex flex-1 flex-col">
                   <ul role="list" className="flex flex-1 flex-col gap-y-7">
                     <li>
@@ -157,7 +160,15 @@ export default function Example({ children }: { children: React.ReactNode }) {
         <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#202426] px-6 pb-4">
-            <div className="flex h-16 shrink-0 items-center">logo</div>
+            <div className="flex h-16 shrink-0 items-start">
+              <Image
+                src="/syll.png"
+                alt="Syllabus"
+                className="h-8"
+                width={200}
+                height={70}
+              />
+            </div>
             <nav className="flex flex-1 flex-col">
               <ul role="list" className="flex flex-1 flex-col gap-y-7">
                 <li>
@@ -231,7 +242,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
         </div>
 
         <div className="lg:pl-72">
-          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-[#202426] bg-black px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b-2 border-[#202426] bg-black px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
             <button
               type="button"
               onClick={() => setSidebarOpen(true)}
@@ -279,15 +290,15 @@ export default function Example({ children }: { children: React.ReactNode }) {
                     <span className="sr-only">Open user menu</span>
                     <img
                       alt=""
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      src="/logo.png"
                       className="h-8 w-8 rounded-full bg-gray-50"
                     />
                     <span className="hidden lg:flex lg:items-center">
                       <span
                         aria-hidden="true"
-                        className="ml-4 text-sm font-semibold leading-6 text-gray-900"
+                        className="ml-4 text-sm font-semibold leading-6 text-white"
                       >
-                        vance@framework.com
+                        chuck@berachain.com
                       </span>
                       <ChevronDownIcon
                         aria-hidden="true"

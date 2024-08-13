@@ -4,16 +4,16 @@ import { NewRequest } from "./newRequest";
 export default function Home() {
   return (
     <main className="flex flex-col gap-4">
-      <div className="flex justify-between border border-blue-900 rounded-lg">
-        <div className="flex-1 text-center p-4">
+      <div className="flex justify-between gap-4">
+        <div className="flex-1 text-center p-4 bg-[#202426] rounded-lg">
           {" "}
-          <div className="text-lg">Total Requests</div>
-          <div className="text-3xl">10</div>
+          <div className="text-lg text-indigo-200">Total Requests</div>
+          <div className="text-3xl text-white">10</div>
         </div>
-        <div className=" border-x border-blue-900 flex-1  text-center  p-4">
+        <div className="flex-1  text-center p-4 bg-[#202426] rounded-lg ">
           {" "}
-          <div className="text-lg">Total Funding</div>
-          <div className="text-3xl">$ 112,312,213</div>
+          <div className="text-lg text-indigo-200">Total Funding</div>
+          <div className="text-3xl text-white">$ 112,312,213</div>
         </div>
         <div className=" p-4 flex-1  text-center">
           <NewRequest name="Kodiac" progress={50} title="AMM liquidity" />

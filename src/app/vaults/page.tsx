@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Slider } from "./slider";
 import { Input } from "../components/input";
+import { cn } from "../components/cn";
 
 export default function Home() {
   const [level, setLevel] = useState(0);
