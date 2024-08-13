@@ -29,13 +29,13 @@ export const NewRequest = ({
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <button className=" text-indigo-200 rounded-lg underline text-right w-full text-sm">
+        <button className="text-indigo-200 rounded-lg underline text-right w-full font-bold">
           New Funding Request
         </button>
       </DialogTrigger>
-      <DialogContent className="w-[600px] bg-[#16181A] border-[#202426] bg-opacity-90">
+      <DialogContent className="w-[600px] bg-[#16181A] border-[#202426]">
         <DialogTitle className="text-lg">Funding Details 🥰💰</DialogTitle>
-        <hr className="text-indigo-200" />
+
         <div className="flex justify-between mt-10 items-center">
           <div className="text-sm">TVL Requested ($)</div>
           <input

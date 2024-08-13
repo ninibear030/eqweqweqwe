@@ -1,9 +1,13 @@
-import Example from "./components/sidebar";
-
 export default function Home() {
   return (
-    <main >
-hi
+    <main>
+      <iframe
+        src={"/spearbit-audit-amm.pdf"}
+        width="100%"
+        height="1000px"
+        title="PDF Viewer"
+        style={{ border: "none" }}
+      />
     </main>
   );
 }
