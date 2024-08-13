@@ -19,7 +19,10 @@ export default function Vault() {
 
   return (
     <main className="flex flex-col gap-4 w-[800px] items-center">
-      <div className="text-2xl mb-10 w-full text-left">Slopes</div>
+      <div className="text-2xl w-full text-left">Slopes</div>
+      <div className="text-xl mb-10 w-full text-left">
+        Real yield tailored to your risk appetite
+      </div>
 
       <div className="flex items-center gap-2">
         Earn <span className="text-indigo-200 text-2xl">{apyRange} APY</span> on
@@ -55,7 +58,6 @@ export default function Vault() {
       <div className="bg-orange-100 border-t-4 border-orange-500 rounded-b text-orange-900 px-4 py-3 shadow-md">
         <div className="flex">
           <div>
-            <p className="font-bold">💀 Yield tailored to your risk appetite</p>
             <p className="text-sm">
               Based on your risk selection, the Syllabus AI dynamically
               allocates your capital into the most profitable, risk-adjusted
@@ -76,7 +78,7 @@ export default function Vault() {
           />
 
           <button className="w-[200px] p-2 bg-indigo-200 text-black rounded-lg font-bold">
-            Let&apos;s gamble 🚀
+            LFG 🚀
           </button>
         </div>
       </div>
