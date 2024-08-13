@@ -52,7 +52,7 @@ export default function Home() {
           name="Infra"
           progress={70}
           title="We need money, Fund us right now💅💅"
-          img="/assets/infra.jpg"
+          img="/assets/Infra.jpg"
         />
         <Request
           name="Shogun"
