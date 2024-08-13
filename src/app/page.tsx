@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-4 p-4">
       <div className="flex justify-between items-center rounded-lg">
-        <div className="flex-1">
-          <h2 className="text-2xl">Assets</h2>
-        </div>
+        <h2 className="text-2xl font-semibold">Assets</h2>
         <div className="flex-1 text-right me-5">
           <div>balance:</div>
           <p className="text-2xl font-semibold">$ 100,000,000.00</p>

@@ -6,9 +6,11 @@ export default function Home() {
     <main className="flex flex-col gap-4">
       <div className="flex justify-between gap-4 items-center mb-10">
         <div>
-          <div className="text-2xl">Fulcrum</div>
-          <div className="text-2xl"></div>
-          Facilitating liquidity for the Bera ecosystem
+          <div className="text-2xl font-semibold">Fulcrum</div>
+          <div className="text-sm">
+            {" "}
+            Facilitating liquidity for the Bera ecosystem
+          </div>
         </div>
 
         <div className="w-[750px] flex gap-4">

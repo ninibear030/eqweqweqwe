@@ -19,9 +19,12 @@ export default function Vault() {
 
   return (
     <main className="flex flex-col gap-4 w-[800px] items-center">
-      <div className="text-2xl w-full text-left">Slopes</div>
-      <div className="text-xl mb-10 w-full text-left">
-        Real yield tailored to your risk appetite
+      <div className="mb-10 w-full text-left">
+        <div className="text-2xl font-semibold">Slopes</div>
+        <div className="text-sm">
+          {" "}
+          💀 Real yield tailored to your risk appetite
+        </div>
       </div>
 
       <div className="flex items-center gap-2">
