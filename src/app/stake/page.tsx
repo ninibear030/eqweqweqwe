@@ -10,7 +10,7 @@ export default function Home() {
           <div>APY</div>
           <div className="text-green-400">24.43%</div>
         </div>
-        <button className="w-full bg-indigo-200 p-2 rounded-md">
+        <button className="w-full bg-indigo-200  text-black p-2 rounded-md">
           Stake BERA
         </button>
       </div>

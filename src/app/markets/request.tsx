@@ -33,10 +33,10 @@ export const Request = ({
         alt={name}
         width={300}
         height={300}
-        className="absolute right-0 bottom-0 rounded-full opacity-30 transform translate-x-[30%] translate-y-[40%] -z-10"
+        className="absolute right-0 bottom-0 rounded-full opacity-30 transform translate-x-[30%] translate-y-[40%] z-1"
       />
 
-      <div className="flex items-center gap-2 z-10">
+      <div className="flex items-center gap-2">
         <Image
           src={img}
           alt={name}
@@ -53,7 +53,7 @@ export const Request = ({
           progress: {progress}%
         </div>
       </div>
-      <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+      <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 relative z-10">
         <div
           className="bg-indigo-200 h-1.5 rounded-full"
           style={{ width: `${progress}%` }}
@@ -62,7 +62,7 @@ export const Request = ({
 
       <Dialog>
         <DialogTrigger asChild>
-          <button className="rounded-lg bg-indigo-200 p-2 text-[#16181a]">
+          <button className="rounded-lg bg-indigo-200 p-2 text-[#16181a] z-10 relative">
             Details/deposit
           </button>
         </DialogTrigger>
