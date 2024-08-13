@@ -52,7 +52,7 @@ export const Request = ({
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px] bg-black">
           <DialogHeader>
-            <DialogTitle>Kodiak $10M 6month</DialogTitle>
+            <DialogTitle>Kodiak Finance</DialogTitle>
           </DialogHeader>
           <div className="flex justify-between">
             <div> 50M/100M HONEY</div>
@@ -71,8 +71,12 @@ export const Request = ({
             <div className="text-green-500">50% APR</div>
           </div>
           <div className="flex justify-between">
-            <div>tokens</div>
+            <div>Tokens</div>
             <div className="text-orange-500">200K Kodiak</div>
+          </div>
+          <div className="flex justify-between">
+            <div>Duration</div>
+            <div className="text-blue-400">6 Months</div>
           </div>
           <div className="flex justify-between">
             <div></div>
