@@ -23,7 +23,7 @@ export const Portfolio = ({
 
 <div className="overflow-x-auto shadow-md sm:rounded-lg">
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 border-b border-indigo-200">
-        <thead className="text-xs text-white uppercase border-b border-indigo-200  ">
+        <thead className="text-xs text-white uppercase border-b border-indigo-200">
             <tr>
                 <th scope="col" className="px-6 py-3">
                     Token
