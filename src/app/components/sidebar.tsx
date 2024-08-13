@@ -180,7 +180,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
                           className={classNames(
                             item.current
                               ? "bg-indigo-700 text-white"
-                              : "text-indigo-200 hover:bg-black hover:text-white",
+                              : "text-indigo-200 hover:bg-[#16181A] hover:text-white",
                             "group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6"
                           )}
                         >
@@ -227,7 +227,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
                 <li className="mt-auto">
                   <a
                     href="#"
-                    className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-indigo-200 hover:bg-black hover:text-white"
+                    className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-indigo-200 hover:bg- hover:text-white"
                   >
                     <Cog6ToothIcon
                       aria-hidden="true"
@@ -242,7 +242,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
         </div>
 
         <div className="lg:pl-72">
-          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b-2 border-[#202426] bg-black px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b-2 border-[#202426] bg-[#16181A] px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
             <button
               type="button"
               onClick={() => setSidebarOpen(true)}
@@ -298,7 +298,7 @@ export default function Example({ children }: { children: React.ReactNode }) {
                         aria-hidden="true"
                         className="ml-4 text-sm font-semibold leading-6 text-white"
                       >
-                        chuck@berachain.com
+                        vance@framework.com
                       </span>
                       <ChevronDownIcon
                         aria-hidden="true"

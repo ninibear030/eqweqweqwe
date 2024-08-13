@@ -6,16 +6,21 @@ export default function Home() {
     <main className="flex flex-col gap-4">
       <div className="flex justify-between gap-4 items-center">
         <div className="text-2xl">Fulcrum</div>
-        <div className="w-[800px] flex gap-4">
+        <div className="w-[750px] flex gap-4">
           <div className="flex-1 text-center p-4 bg-[#202426] rounded-lg">
             {" "}
-            <div className="text-lg text-indigo-200">Total Requests</div>
+            <div className="text-sm text-indigo-200">Total Requests</div>
             <div className="text-2xl text-white">10</div>
           </div>
           <div className="flex-1  text-center p-4 bg-[#202426] rounded-lg ">
             {" "}
-            <div className="text-lg text-indigo-200">Total Funding</div>
+            <div className="text-sm text-indigo-200">Total Funding</div>
             <div className="text-2xl text-white">$ 112,312,213</div>
+          </div>
+          <div className="flex-1  text-center p-4 bg-[#202426] rounded-lg ">
+            {" "}
+            <div className="text-sm text-indigo-200">Bearchain Interest rate</div>
+            <div className="text-2xl text-white">69,420%</div>
           </div>
         </div>
       </div>
@@ -38,13 +43,13 @@ export default function Home() {
         <Request
           name="Infra"
           progress={70}
-          title="We need money, Fund us"
+          title="We need money, Fund us right now💅💅"
           img="/assets/infra.jpg"
         />
         <Request
           name="Shogun"
           progress={38}
-          title="crosschain"
+          title="Crosschain"
           img="/assets/Shogun.jpg"
         />
       </div>

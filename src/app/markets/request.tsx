@@ -62,11 +62,11 @@ export const Request = ({
 
       <Dialog>
         <DialogTrigger asChild>
-          <button className="rounded-lg bg-indigo-200 p-2 text-black">
+          <button className="rounded-lg bg-indigo-200 p-2 text-[#16181A]">
             Details/deposit
           </button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px] bg-black">
+        <DialogContent className="sm:max-w-[425px] bg-[#16181A]">
           <DialogHeader>
             <DialogTitle>Kodiak Finance</DialogTitle>
           </DialogHeader>

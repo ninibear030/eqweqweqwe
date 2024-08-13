@@ -50,7 +50,7 @@ export const Request1 = ({
             Details/deposit
           </button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px] bg-black">
+        <DialogContent className="sm:max-w-[425px] bg-[#16181A]">
           <DialogHeader>
             <DialogTitle>Kodiak $10M 6month</DialogTitle>
           </DialogHeader>

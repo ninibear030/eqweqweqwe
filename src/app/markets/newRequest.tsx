@@ -21,62 +21,78 @@ export const NewRequest = ({
   progress: number;
 }) => {
   const [open, setOpen] = useState(false);
-  const [amount, setAmount] = useState("");
+  const [duration, setDuration] = useState(0);
+  const [amount, setAmount] = useState(0);
+  const [selectedToken, setSelectedToken] = useState("HONEY");
+  const [requestAmount, setRequestAmount] = useState(0);
+
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <button className=" text-indigo-200 rounded-lg underline text-right w-full text-xs">
+        <button className=" text-indigo-200 rounded-lg underline text-right w-full text-sm">
           New Funding Request
         </button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] bg-black">
-        <DialogHeader>
-          <DialogTitle>Kodiak Finance</DialogTitle>
-        </DialogHeader>
-        <div className="flex justify-between">
-          <div> 50M/100M HONEY</div>
-          <div className="mb-1 text-base font-medium dark:text-white">
-            progress: {progress}%
-          </div>
-        </div>
-        <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
-          <div
-            className="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500"
-            style={{ width: `${progress}%` }}
+      <DialogContent className="w-[600px] bg-[#16181A] border-[#202426] bg-opacity-90">
+        <DialogTitle className="text-lg">Funding Details 🥰💰</DialogTitle>
+        <hr className="text-indigo-200" />
+        <div className="flex justify-between mt-10 items-center">
+          <div className="text-sm">TVL Requested ($)</div>
+          <input
+            type="number"
+            className="w-1/2 text-white rounded-lg border-[#202426] bg-transparent"
+            value={amount}
+            placeholder="enter amount"
+            onChange={(e) => setAmount(Number(e.target.value))}
           />
         </div>
-        <div className="flex justify-between">
-          <div>Incentives</div>
-          <div className="text-green-500">50% APR</div>
+        <div className="flex justify-between items-center">
+          <div className="text-sm">Incentives</div>
+          <div className="w-1/2 flex space-x-2">
+            <input
+              type="number"
+              className="w-1/2 text-white rounded-lg border-[#202426] bg-transparent"
+              value={requestAmount}
+              placeholder="amount"
+              onChange={(e) => setRequestAmount(Number(e.target.value))}
+            />
+            <select
+              className="w-1/2 text-white rounded-lg border-[#202426] bg-transparent"
+              value={selectedToken}
+              onChange={(e) => setSelectedToken(e.target.value)}
+            >
+              <option value="BERA">BERA</option>
+              <option value="HONEY">HONEY</option>
+              <option value="KODIAK">KODIAK</option>
+            </select>
+          </div>
         </div>
-        <div className="flex justify-between">
-          <div>Tokens</div>
-          <div className="text-orange-500">200K Kodiak</div>
+        <div className="flex justify-between items-center">
+          <div className="text-sm">Duration (months)</div>
+          <input
+            type="number"
+            className="w-1/2 text-white rounded-lg border-[#202426] bg-transparent"
+            value={duration}
+            placeholder="enter months"
+            onChange={(e) => setDuration(Number(e.target.value))}
+          />
         </div>
-        <div className="flex justify-between">
-          <div>Duration</div>
-          <div className="text-blue-400">6 Months</div>
+        <div className="flex justify-between items-center">
+          <div className="text-sm">Vesting</div>
+          <select
+            className="w-1/2 text-white rounded-lg border-[#202426] bg-transparent"
+            value={selectedToken}
+            onChange={(e) => setSelectedToken(e.target.value)}
+          >
+            <option value="LINEAR">LINEAR</option>
+            <option value="CUSTOM">CUSTOM</option>
+          </select>
         </div>
-        <div className="flex justify-between">
-          <div></div>
-          <a className="underline cursor-pointer" href="/audits">
-            Audits
-          </a>
-        </div>
-        <hr className="py-2" />
-        <div>Deposit amount:</div>
-        <input
-          type="number"
-          className="bg-white"
-          value={amount}
-          placeholder="enter amount"
-          onChange={(e) => setAmount(e.target.value)}
-        />
 
         <DialogFooter>
-          <button className="mt-3 w-full p-2 bg-green-500 rounded-lg">
-            New Funding Request
-          </button>{" "}
+          <button className="mt-3 w-full p-2 bg-indigo-200 rounded-lg text-[#202426] font-bold">
+            Click here to beg for money 🙏
+          </button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

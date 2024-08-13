@@ -54,7 +54,7 @@ export default function Home() {
         type="number"
         onChange={(e) => setAmount(e.target.value)}
         value={amount}
-        className="text-black"
+        className="text-[#16181A]"
       />
       <button className="bg-yellow-300 p-4">Lets gamble</button>
     </main>
