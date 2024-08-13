@@ -65,16 +65,6 @@ export default function Vault() {
         </div>
       </div>
 
-<<<<<<< Updated upstream
-      <div className="text-2xl">Deposit {selectedToken}</div>
-      <Input
-        type="number"
-        onChange={(e) => setAmount(e.target.value)}
-        value={amount}
-        className="text-black"
-      />
-      <button className="bg-yellow-300 p-4">Let&apos;s gamble</button>
-=======
       <div className="w-full mt-10">
         <div className="text-lg mb-2"> Deposit {`${selectedToken}`}</div>
         <div className="flex gap-4">
@@ -90,7 +80,6 @@ export default function Vault() {
           </button>
         </div>
       </div>
->>>>>>> Stashed changes
     </main>
   );
 }

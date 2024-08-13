@@ -30,7 +30,7 @@ import {
 import Image from "next/image";
 
 const navigation = [
-  { name: "Assets", href: "/assets", icon: HomeIcon, current: false },
+  { name: "Assets", href: "/", icon: HomeIcon, current: false },
   {
     name: "Fulcrum",
     href: "/markets",
